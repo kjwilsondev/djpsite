@@ -73,21 +73,49 @@ body {
   border-radius: 53px;
   margin: 0 10px 30px 10px;
 
+  border: 3px solid transparent;
   color: white;
   font: normal 75% "Khula", sans-serif;
   font-size: 0.85em;
   font-weight: 700;
-  line-height: 2.5;
+  line-height: 2;
   letter-spacing: 0.1em;
 }
 
 #join {
   margin-top: 47.5%;
   background-color: #7e9978;
+  color: white;
 }
+
+/* #join {
+  margin-top: 47.5%;
+  background-color: transparent;
+  border: 2px solid #7e9978;
+  color: #7e9978;
+} */
+
+#join:hover,
+#join:active {
+  border: 3px solid #7e9978;
+  background-color: transparent;
+  color: #7e9978;
+}
+
+/* #join:hover {
+  background-color: white;
+  color: #7e9978;
+} */
 
 #donate {
   background-color: #b18e7d;
+}
+
+#donate:hover,
+#donate:active {
+  border: 3px solid #b18e7d;
+  background-color: white;
+  color: #b18e7d;
 }
 
 /* ---- particles.js container ---- */
