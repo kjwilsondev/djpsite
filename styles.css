@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
+  font: normal 75% "Khula", sans-serif;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -21,7 +21,6 @@ body {
   /* margin: -150px 0 0 -200px; */
   transform: translate(-50%, -50%);
 
-  font-family: "Khula", sans-serif;
   font-size: 1.5em;
 
   /* background: #eee; */
@@ -58,6 +57,37 @@ body {
   text-align: center;
   color: #3f3f3f;
   margin-top: -4px;
+}
+
+.home-buttons {
+  width: 100%;
+  align-content: center;
+}
+
+.button {
+  border: hidden;
+  outline: none;
+
+  width: 240px;
+  height: 40px;
+  border-radius: 53px;
+  margin: 0 10px 30px 10px;
+
+  color: white;
+  font: normal 75% "Khula", sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+}
+
+#join {
+  margin-top: 47.5%;
+  background-color: #7e9978;
+}
+
+#donate {
+  background-color: #b18e7d;
 }
 
 /* ---- particles.js container ---- */
