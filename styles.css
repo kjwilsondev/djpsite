@@ -82,37 +82,29 @@ body {
   letter-spacing: 0.1em;
 }
 
+.button:active {
+  font-size: 0.8em;
+}
+
 #join {
   margin-top: 47.5%;
   background-color: #7e9978;
   color: white;
+  transition: all 0.3s;
 }
 
-/* #join {
-  margin-top: 47.5%;
-  background-color: transparent;
-  border: 2px solid #7e9978;
-  color: #7e9978;
-} */
-
-#join:hover,
-#join:active {
+#join:hover {
   border: 3px solid #7e9978;
   background-color: transparent;
   color: #7e9978;
 }
 
-/* #join:hover {
-  background-color: white;
-  color: #7e9978;
-} */
-
 #donate {
   background-color: #b18e7d;
+  transition: all 0.3s;
 }
 
-#donate:hover,
-#donate:active {
+#donate:hover {
   border: 3px solid #b18e7d;
   background-color: white;
   color: #b18e7d;
