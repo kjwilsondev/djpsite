@@ -31,6 +31,26 @@ body {
   box-sizing: border-box;
 }
 
+.button-panel {
+  z-index: 1;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  /* margin: -150px 0 0 -200px; */
+  transform: translate(-50%, -50%);
+
+  font-size: 1.5em;
+
+  /* background: #eee; */
+  background: rgba(255, 255, 255, 0.75);
+
+  padding: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 #panel-items {
   display: flex;
   flex-direction: column;
@@ -62,9 +82,11 @@ body {
 .home-buttons {
   width: 100%;
   align-content: center;
+  z-index: 2;
 }
 
 .button {
+  cursor: pointer;
   border: hidden;
   outline: none;
 
@@ -82,32 +104,12 @@ body {
   letter-spacing: 0.1em;
 }
 
+.button:hover {
+  letter-spacing: 0.2em;
+}
+
 .button:active {
   font-size: 0.8em;
-}
-
-#join {
-  margin-top: 47.5%;
-  background-color: #7e9978;
-  color: white;
-  transition: all 0.3s;
-}
-
-#join:hover {
-  border: 3px solid #7e9978;
-  background-color: transparent;
-  color: #7e9978;
-}
-
-#donate {
-  background-color: #b18e7d;
-  transition: all 0.3s;
-}
-
-#donate:hover {
-  border: 3px solid #b18e7d;
-  background-color: white;
-  color: #b18e7d;
 }
 
 /* ---- particles.js container ---- */

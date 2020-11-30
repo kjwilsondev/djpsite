@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="recordplayer.css" />
+    <!-- Fonts -->
+    <script
+      src="https://kit.fontawesome.com/938f0786af.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <!-- particles.js container -->
+    <div id="particles-js">
+      <div id="donate-panel" class="button-panel">
+        <ul id="panel-items">
+          <li></li>
+          <li>
+            <button 
+              class="button" 
+              id="paypal" 
+              onclick="location.href='https://www.paypal.com/donate/?business=clucero%40horizons-sf.org';" 
+              value="Donate with PayPal">
+                PayPal
+            </button>
+          </li>
+          <li>
+            <button class="button" id="venmo" onclick="">Venmo</button>
+          </li>
+          <li>
+            <button class="button" id="stripe" onclick="">Debit or Credit</button>
+          </li>
+          <li></li>
+          <li></li>
+          <li>
+            <i
+              class="fas fa-arrow-alt-circle-left fa-2x"
+              style="color: #2F392D; align-self: center;"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </div> 
+  </body>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    function join() {
+      document.getElementById("panel").style.transition = "opacity 1.5s ease-in-out";
+      document.getElementById("panel").style.opacity = "0";
+      document.getElementById("panel").innerHTML = document.getElementById(param_div_id).innerHTML;
+    }
+    </script>
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+</html>

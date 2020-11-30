@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="join-panel" class="button-panel">
+      <ul id="panel-items">
+        <li></li>
+        <li>
+          <button 
+            class="button" 
+            id="youth" 
+            onclick="location.href='https://forms.gle/r8cdEJvxh93NjSyF9';" 
+            value="Youth Application">
+              YOUTH
+          </button>
+        </li>
+        <li>
+          <button class="button" id="volunteer" onclick="location.href=''" value="Volunteer Application">VOLUNTEER</button>
+        </li>
+        <li>
+          <button class="button" id="staff" onclick="location.href=''" value="Staff Application">STAFF</button>
+        </li>
+        <li></li>
+        <li></li>
+        <li>
+          <i
+            class="fas fa-arrow-alt-circle-left fa-2x"
+            style="
+              cursor: pointer;
+              color: #2F392D;
+              align-self: center;
+            "
+            onclick="back()"
+          ></i>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    function back() {
+      document.getElementById("join-panel").style.transition = "opacity 1.5s ease-in-out";
+      document.getElementById("join-panel").style.opacity = "0";
+    }
+    </script>
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+</html>
