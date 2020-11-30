@@ -1,25 +1,25 @@
 #join {
   margin-top: 34.5%;
-  background-color: #7e9978;
+  background-color: #4e604c;
   color: white;
   transition: all 0.3s;
 }
 
 #join:hover {
-  border: 3px solid #7e9978;
+  border: 3px solid #4e604c;
   background-color: transparent;
-  color: #7e9978;
+  color: #4e604c;
 }
 
 #donate {
-  background-color: #b18e7d;
+  background-color: #8f6a5a;
   transition: all 0.3s;
 }
 
 #donate:hover {
-  border: 3px solid #b18e7d;
+  border: 3px solid #8f6a5a;
   background-color: white;
-  color: #b18e7d;
+  color: #8f6a5a;
 }
 
 #paypal {

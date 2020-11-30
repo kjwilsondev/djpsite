@@ -1,7 +1,7 @@
 AOS.init({});
 
 var w = window.outerWidth;
-console.log(w);
+// console.log(w);
 
 particlesJS("particles-js", 
     {

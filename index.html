@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="import" href="join.html" />
-    <link rel="import" href="donate.html" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="recordplayer.css" />
     <link rel="stylesheet" href="buttons.css" />
@@ -95,20 +93,60 @@
           </li>
         </ul>
       </div>
+      <div id="join-panel" class="button-panel">
+        <ul id="panel-items">
+          <li></li>
+          <li>
+            <button 
+              class="button" 
+              id="youth" 
+              onclick="location.href='https://forms.gle/r8cdEJvxh93NjSyF9';" 
+              value="Youth Application">
+                YOUTH
+            </button>
+          </li>
+          <li>
+            <button class="button" id="volunteer" onclick="location.href=''" value="Volunteer Application">VOLUNTEER</button>
+          </li>
+          <li>
+            <button class="button" id="staff" onclick="location.href=''" value="Staff Application">STAFF</button>
+          </li>
+          <li></li>
+          <li></li>
+          <li>
+            <i
+              class="fas fa-arrow-alt-circle-left fa-2x"
+              style="
+                cursor: pointer;
+                color: #2F392D;
+                align-self: center;
+              "
+              onclick="back()"
+            ></i>
+          </li>
+        </ul>
+      </div>
     </div> 
   </body>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./index.js"></script>
   <script>
-    var panel = document.getElementById('panel').innerHTML;
-    var joinPanel = document.getElementById('join-panel').innerHTML;
-    console.log(joinPanel)
-    function join() {
-      document.getElementById("panel").style.transition = "opacity 1.5s ease-in-out";
-      document.getElementById("panel").style.opacity = "0";
-      document.getElementById("panel").style.opacity = "0";
-      document.getElementById("button-panel").style.transition = "opacity 1.5s ease-in-out";
-      document.getElementById('panel').innerHTML = joinPanel;
+    function fadeOut(id) {
+        document.getElementById(id).style.transition = "opacity 1.5s ease-in-out";
+        document.getElementById(id).style.opacity = "0";
+        document.getElementById(id).style.display = "none";
+    }
+
+    function fadeIn(id)  
+
+    async function join() {
+      let promise = await fadeOut('panel')
+      
+      document.getElementById("join-panel").style.display = "unset";
+      setTimeout(function() {
+        document.getElementById("join-panel").style.opacity = "1";
+      }, 100);
+      document.getElementById("join-panel").style.opacity = "0";
     }
   </script>
   <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->

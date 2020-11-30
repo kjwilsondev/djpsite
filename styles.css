@@ -15,7 +15,7 @@ body {
   z-index: 1;
   position: absolute;
   width: 300px;
-  height: 400px;
+  height: 450px;
   top: 50%;
   left: 50%;
   /* margin: -150px 0 0 -200px; */
@@ -49,6 +49,18 @@ body {
   padding: 20px;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+#join-panel {
+  display: none;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+#donate-panel {
+  display: none;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
 }
 
 #panel-items {
