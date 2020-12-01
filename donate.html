@@ -25,7 +25,8 @@
   </head>
   <body>
     <!-- particles.js container -->
-    <div id="particles-js">
+    <!-- <div id="particles-js"> -->
+    <div>
       <div id="donate-panel" class="button-panel">
         <ul id="panel-items">
           <li></li>
@@ -47,10 +48,12 @@
           <li></li>
           <li></li>
           <li>
-            <i
-              class="fas fa-arrow-alt-circle-left fa-2x"
-              style="color: #2F392D; align-self: center;"
-            ></i>
+            <a href="/">
+              <i
+                class="fas fa-arrow-alt-circle-left fa-2x"
+                style="color: #2F392D; align-self: center; cursor: pointer;"
+              ></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -58,12 +61,5 @@
   </body>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./index.js"></script>
-  <script>
-    function join() {
-      document.getElementById("panel").style.transition = "opacity 1.5s ease-in-out";
-      document.getElementById("panel").style.opacity = "0";
-      document.getElementById("panel").innerHTML = document.getElementById(param_div_id).innerHTML;
-    }
-    </script>
   <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
 </html>

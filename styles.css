@@ -19,7 +19,8 @@ body {
   right: 0;
   left: 0;
   z-index: 9999;
-  box-shadow: 0px 5px 30px #b8c8dd;
+  box-shadow: 0px 5px 20px #b8c8dd;
+  font-size: 1.75em;
 
   background: rgba(255, 255, 255, 0.92);
 }
@@ -28,15 +29,28 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
+  padding: 12px 0;
 }
 
 li {
   list-style: none;
 }
 
+.logo {
+  font: normal 75% "Khula", sans-serif;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 10px 15px;
+  letter-spacing: 0em;
+}
+
 .icon {
+  color: #383838;
+  margin: 0px 27px;
+}
+
+.icon:hover {
   color: #b8c8dd;
-  margin: 5px 5px 5px 5px;
 }
 
 .nav-split {
@@ -49,7 +63,7 @@ li {
 
 #djbooth {
   min-height: 200px;
-  padding-bottom: 40px;
+  margin: 50px 0 0 0;
 }
 
 #panel {
@@ -130,6 +144,7 @@ li {
   text-align: center;
   color: #3f3f3f;
   margin-top: -4px;
+  z-index: -1;
 }
 
 .home-buttons {
