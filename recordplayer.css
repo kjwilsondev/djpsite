@@ -28,7 +28,7 @@
 
 #disk2 {
   position: absolute;
-  top: 12%;
+  top: 11%;
   left: 50px;
   width: 300px;
   height: 300px;
@@ -98,8 +98,8 @@
   border-radius: 150px;
   background: white;
   content: "";
-  -webkit-animation: spin 5s linear infinite;
-  animation: spin 5s linear infinite;
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
 }
 
 #label2:after {
@@ -159,6 +159,38 @@
   background: rgb(245, 246, 253);
   border-radius: 10px;
   content: "";
+}
+
+#wood {
+  position: absolute;
+  top: 232px;
+  left: -5px;
+  width: 252px;
+  height: 16px;
+  background: #a07f6f;
+  border-radius: 0 0 15px 8px;
+  transform: rotateZ(10deg) skewX(10deg);
+  -ms-transform: rotateZ(10deg) skewX(10deg);
+  -moz-transform: rotateZ(10deg) skewX(10deg);
+  -webkit-transform: rotateZ(10deg) skewX(10deg);
+  overflow: hidden;
+  z-index: 1;
+}
+
+#wood2 {
+  position: absolute;
+  top: 175px;
+  left: 258px;
+  width: 12px;
+  height: 96px;
+  background: #997463;
+  border-radius: 0 2px 25px 0;
+  transform: rotateZ(50deg) skewX(15deg) skewY(48deg);
+  -ms-transform: rotateZ(50deg) skewX(15deg) skewY(48deg);
+  -moz-transform: rotateZ(50deg) skewX(15deg) skewY(48deg);
+  -webkit-transform: rotateZ(50deg) skewX(15deg) skewY(48deg);
+  overflow: hidden;
+  z-index: 1;
 }
 
 /* keyframes for wheel animation;  simple 0 to 360 */
