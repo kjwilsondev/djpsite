@@ -12,7 +12,6 @@ body {
 }
 
 .nav {
-  list-style: none;
   width: 100%;
   height: 50px;
   position: fixed !important;
@@ -20,7 +19,6 @@ body {
   right: 0;
   left: 0;
   z-index: 9999;
-  border-bottom: 0.5px solid #b8c8dd;
   box-shadow: 0px 5px 30px #b8c8dd;
 
   background: rgba(255, 255, 255, 0.92);
@@ -32,9 +30,13 @@ body {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 .icon {
-  padding: 1vh 2.5vw 1vh 2vw;
-  color: grey;
+  color: #b8c8dd;
+  margin: 5px 5px 5px 5px;
 }
 
 .nav-split {
@@ -43,6 +45,11 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+
+#djbooth {
+  min-height: 200px;
+  padding-bottom: 40px;
 }
 
 #panel {
@@ -126,6 +133,7 @@ body {
 }
 
 .home-buttons {
+  height: auto;
   width: 100%;
   align-content: center;
   z-index: 2;

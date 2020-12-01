@@ -173,7 +173,6 @@
   -ms-transform: rotateZ(10deg) skewX(10deg);
   -moz-transform: rotateZ(10deg) skewX(10deg);
   -webkit-transform: rotateZ(10deg) skewX(10deg);
-  overflow: hidden;
   z-index: 1;
 }
 
