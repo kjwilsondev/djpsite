@@ -4,27 +4,9 @@
 }
 
 #join {
-  margin-top: 15%;
+  margin-top: 25%;
 }
 
 .icon {
   margin: 0px 18px;
-}
-
-.button-panel {
-  width: 300px;
-  height: 550px;
-  top: 50%;
-  left: 50%;
-  /* margin: -150px 0 0 -200px; */
-  transform: translate(-50%, -50%);
-
-  font-size: 1.5em;
-
-  /* background: #eee; */
-  background: rgba(255, 255, 255, 0.75);
-
-  padding: 20px;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
