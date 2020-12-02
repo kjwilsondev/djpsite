@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Teko:700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -28,8 +29,12 @@
     <!-- nav bar -->
     <div class="nav">
       <ul class="nav-split">
-        <li class="logo">
-          DJP
+        <li>
+          <img
+            class="logo"
+            src="/sunset.png"
+            style="height: 35px !important;"
+          />
         </li>
         <ul class="nav-split2">
           <li class="icon">
@@ -77,8 +82,8 @@
             <div 
               class="home-buttons" 
             >
-              <button class="button" id="join" onclick="join()"><i class="fas fa-user-plus"></i> JOIN</i></button>
-              <button class="button" id="donate"><i class="fas fa-hand-holding-medical"></i> DONATE</button>
+              <button class="button" id="join" onclick="location.href='/join'"><i class="fas fa-user-plus"></i> JOIN</i></button>
+              <button class="button" id="donate" onclick="location.href='/donate.html'"><i class="fas fa-hand-holding-medical"></i> DONATE</button>
             </div>
           </li>
         </ul>
@@ -117,6 +122,16 @@
         </ul>
       </div>
     </div> 
+    <!-- <div>
+      <ul class="footer">
+        <li>
+          <p id="footer-text">Powered by Horizons </p>
+        </li>
+        <li>
+          <img id="footer-logo" src="/sunset.png" style="height: 35px !important;" />
+        </li>
+      </ul>
+    </div> -->
   </body>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./index.js"></script>

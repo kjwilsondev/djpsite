@@ -40,7 +40,7 @@ li {
   font: normal 75% "Khula", sans-serif;
   font-size: 1.25em;
   font-weight: 900;
-  margin: 10px 15px;
+  margin: 10px 30px;
   letter-spacing: 0em;
 }
 
@@ -112,11 +112,11 @@ li {
   transition: opacity 1.5s ease-in-out;
 }
 
-#donate-panel {
+/* #donate-panel {
   display: none;
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
-}
+} */
 
 #panel-items {
   display: flex;
@@ -181,7 +181,41 @@ li {
   font-size: 0.8em;
 }
 
-/* ---- particles.js container ---- */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+  height: 28px;
+  background-color: #e2e8f1;
+  color: #383838;
+  text-align: center;
+  padding: 4px 0 10px 0;
+  margin: 0;
+
+  box-shadow: 15px 0px 0px 0px #b8c8dd;
+}
+
+#footer-text {
+  font-family: "Syne Mono", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 220px;
+  margin: 6px 4px 16px 0;
+  filter: drop-shadow(0.5px 0.5px 0.5px #383838);
+  -webkit-filter: drop-shadow(0.5px 0.5px 0.5px #383838);
+}
+
+#footer-logo {
+  filter: drop-shadow(1px 1px 1px #383838);
+  -webkit-filter: drop-shadow(1px 1px 1px #383838);
+}
+
+/* particles.js container
 #particles-js {
   position: fixed;
   width: 100%;
@@ -191,6 +225,5 @@ li {
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
-  /* box-sizing: border-box; */
   background-size: contain;
-}
+} */
