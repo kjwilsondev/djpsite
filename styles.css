@@ -160,7 +160,7 @@ li {
   outline: none;
 
   width: 240px;
-  height: 40px;
+  min-height: 40px;
   border-radius: 53px;
   margin: 0 10px 30px 10px;
 
