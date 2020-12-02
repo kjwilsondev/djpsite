@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="recordplayer.css" />
-    <link rel="stylesheet" href="buttons.css" />
-    <link rel="stylesheet" media="only screen and (max-width: 400px)" href="mobile.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../buttons.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 400px)" href="../mobile.css" />
     <!-- Fonts -->
     <script
       src="https://kit.fontawesome.com/938f0786af.js"
@@ -58,33 +57,54 @@
     <!-- particles.js container -->
     <!-- <div id="particles-js"> -->
     <div>
-      <div id="panel">
+      <div id="join-panel" class="button-panel">
         <ul id="panel-items">
-          <li 
-            id="panel-items-title"
-          >
-            djproject
-          </li>
+          <li></li>
+          <li></li>
           <li>
-            <div id="djbooth">
-              <div id="wood"></div>
-              <div id="wood2"></div>
-              <div id="table"></div>
-              <div id="disk">
-                <div id="label"></div>
-              </div>
-              <div id="disk2">
-                <div id="label2"></div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div 
-              class="home-buttons" 
+            <button 
+              class="button" 
+              id="youth" 
+              onclick="location.href='https://forms.gle/r8cdEJvxh93NjSyF9';" 
+              value="Youth Application"
             >
-              <button class="button" id="join" onclick="location.href='/join'"><i class="fas fa-user-plus"></i> JOIN</i></button>
-              <button class="button" id="donate" onclick="location.href='/donate'"><i class="fas fa-hand-holding-medical"></i> DONATE</button>
-            </div>
+                <i class="fas fa-child"></i>
+                YOUTH
+            </button>
+          </li>
+          <li>
+            <button 
+              class="button" 
+              id="volunteer" 
+              onclick="location.href=''" 
+              value="Volunteer Application"
+            >
+                <i class="fas fa-hands-helping"></i>
+                VOLUNTEER
+            </button>
+          </li>
+          <li>
+            <button 
+              class="button" 
+              id="staff" 
+              onclick="location.href=''" 
+              value="Staff Application"
+            >
+              <i class="fas fa-chalkboard-teacher"></i>
+              STAFF
+            </button>
+          </li>
+          <li></li>
+          <li>
+            <i
+              class="fas fa-arrow-alt-circle-left fa-2x"
+              style="
+                cursor: pointer;
+                color: #2F392D;
+                margin: auto;
+              "
+              onclick="location.href='/'"
+            ></i>
           </li>
         </ul>
       </div>

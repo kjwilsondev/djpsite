@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="recordplayer.css" />
-    <link rel="stylesheet" href="buttons.css" />
-    <link rel="stylesheet" media="only screen and (max-width: 400px)" href="mobile.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../buttons.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 400px)" href="../mobile.css" />
     <!-- Fonts -->
     <script
       src="https://kit.fontawesome.com/938f0786af.js"
@@ -58,49 +57,59 @@
     <!-- particles.js container -->
     <!-- <div id="particles-js"> -->
     <div>
-      <div id="panel">
+      <div id="donate-panel" class="button-panel">
         <ul id="panel-items">
-          <li 
-            id="panel-items-title"
-          >
-            djproject
+          <li></li>
+          <li></li>
+          <li>
+            <button 
+              class="button" 
+              id="paypal" 
+              onclick="location.href='https://www.paypal.com/donate/?business=clucero%40horizons-sf.org';" 
+              value="Donate with PayPal">
+              <i class="fab fa-paypal"></i>
+                PayPal
+            </button>
           </li>
           <li>
-            <div id="djbooth">
-              <div id="wood"></div>
-              <div id="wood2"></div>
-              <div id="table"></div>
-              <div id="disk">
-                <div id="label"></div>
-              </div>
-              <div id="disk2">
-                <div id="label2"></div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div 
-              class="home-buttons" 
+            <button 
+              class="button" 
+              id="venmo" 
+              onclick="" 
+              value="Donate with Venmo"
             >
-              <button class="button" id="join" onclick="location.href='/join'"><i class="fas fa-user-plus"></i> JOIN</i></button>
-              <button class="button" id="donate" onclick="location.href='/donate'"><i class="fas fa-hand-holding-medical"></i> DONATE</button>
-            </div>
+            <!-- <i class="fas fa-mobile"></i> -->
+              Venmo
+            </button>
+          </li>
+          <li>
+            <button 
+              class="button" 
+              id="stripe" 
+              onclick="" 
+              value="Donate with card"
+            >
+              <i class="far fa-credit-card"></i>
+              Debit or Credit
+            </button>
+          </li>
+          <li></li>
+          <li>
+            <i
+              class="fas fa-arrow-alt-circle-left fa-2x"
+              style="
+                color: #2F392D;
+                cursor: pointer;
+                margin: auto;
+              "
+              onclick="location.href='/'"
+            ></i>
           </li>
         </ul>
       </div>
     </div> 
-    <!-- <div>
-      <ul class="footer">
-        <li>
-          <p id="footer-text">Powered by Horizons </p>
-        </li>
-        <li>
-          <img id="footer-logo" src="/sunset.png" style="height: 35px !important;" />
-        </li>
-      </ul>
-    </div> -->
   </body>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="./index.js"></script>
+  <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+  <script src="../index.js"></script>
   <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
 </html>
