@@ -181,6 +181,21 @@ li {
   font-size: 0.8em;
 }
 
+.music-icons {
+  position: absolute;
+  left: 0;
+  min-width: 400px;
+  width: 100vw;
+  max-width: 450px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   position: fixed;
   left: 0;
